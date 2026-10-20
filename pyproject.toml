@@ -1,0 +1,24 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "claude-recall"
+version = "0.1.0"
+description = "Local full-text search across CLAUDE.md / AGENTS.md, agent memory, skills and lesson notes"
+readme = "README.md"
+license = { text = "MIT" }
+authors = [{ name = "Hikaru Miyazaki" }]
+requires-python = ">=3.10"
+dependencies = []
+classifiers = [
+  "Programming Language :: Python :: 3",
+  "License :: OSI Approved :: MIT License",
+  "Environment :: Console",
+]
+
+[project.scripts]
+recall = "claude_recall:main"
+
+[tool.setuptools]
+py-modules = ["claude_recall"]

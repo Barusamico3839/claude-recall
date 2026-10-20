@@ -1,0 +1,11 @@
+{
+  "collections": [
+    { "path": "refs", "kind": "refs", "weight": 4 },
+    { "path": "decisions", "kind": "adr", "weight": 4 },
+    { "path": "lessons", "kind": "lesson", "weight": 6 },
+    { "path": "~/notes/runbooks", "kind": "runbook", "weight": 3 }
+  ],
+  "project_roots": ["~/code"],
+  "skip_dirs": ["node_modules", "venv", ".venv", "dist", "build", "target", ".git"],
+  "max_bytes": 400000
+}
